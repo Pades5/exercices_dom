@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="scoreKeeper.css" />
+  </head>
+  <body>
+    <p><b id="playersOne">0</b> <b>to </b><b id="playersTwo"> 0</b></p>
+    <p id="objectif">playing to :</p>
+    <input
+      type="number"
+      value="0"
+      id="limite"
+      min="0"
+      onclick="affichageObjectif()"
+    />
+    <input type="button" value="Player Un" onclick="ajoutResultat1()" />
+    <input type="button" value="Player Two" onclick="ajoutResultat2()" />
+    <input type="button" value="Reset" onclick="reset()" />
+  </body>
+  <script src="scoreKeeper.js"></script>
+</html>
